@@ -1,6 +1,17 @@
 .card.personal-details{
 
 }
+.card.personal-details .card-content {
+  font-size: 14px;
+  line-height: 24px;
+}
+.card.personal-details .card-content i{
+  font-size: 24px;
+}
+.card.personal-details .card-content .skills .title{
+  font-size: 24px;
+}
+
 .card.personal-details .card-image > .card-title > .complate-name .first-name{
   font-size: 22px;
 }
@@ -10,10 +21,6 @@
 }
 .card.personal-details .card-image > .card-title > .job-title{
   font-size: 14px;
-}
-.card-panel.experience-wrapper > .experience-list .experience-icon,
-.card-panel.experience-wrapper > .experience-list .experience-title{
-  //text-align: center;
 }
 .card-panel.experience-wrapper > .experience-list .experience-item{
   margin-top:20px;
@@ -46,4 +53,13 @@
 
 .divider-ul{
   margin-top: 30px;
+}
+.bold{
+  font-weight: bold;
+}
+.lighter{
+  font-weight: lighter;
+}
+.medium{
+  font-weight: 300;
 }
