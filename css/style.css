@@ -1,0 +1,49 @@
+.card.personal-details{
+
+}
+.card.personal-details .card-image > .card-title > .complate-name .first-name{
+  font-size: 22px;
+}
+.card.personal-details .card-image > .card-title > .complate-name .last-name{
+  font-size: 18px;
+  font-weight: bold;
+}
+.card.personal-details .card-image > .card-title > .job-title{
+  font-size: 14px;
+}
+.card-panel.experience-wrapper > .experience-list .experience-icon,
+.card-panel.experience-wrapper > .experience-list .experience-title{
+  //text-align: center;
+}
+.card-panel.experience-wrapper > .experience-list .experience-item{
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+.card-panel.experience-wrapper > .experience-list .experience-item .job-title{
+  font-size: 14px;
+  font-weight: bold;
+}
+.card-panel.experience-wrapper > .experience-list .experience-item .job-title .company-name{
+  font-size: 12px;
+  font-weight: normal;
+}
+.card-panel.experience-wrapper > .experience-list .experience-item .period{
+  font-size: 10px;
+}
+.card-panel.experience-wrapper > .experience-list .experience-item .summary{
+  font-size: 12px;
+  text-align: justify;
+}
+.card-panel.experience-wrapper > .experience-list .experience-item .summary ul{
+  margin-bottom: 10px;
+}
+.card-panel.experience-wrapper > .experience-list .experience-item .summary ul > li .fa.fa-circle{
+  margin:7px 0;
+}
+.card-panel.experience-wrapper > .experience-list .experience-item .summary ul > li span{
+  margin:5px 0;
+}
+
+.divider-ul{
+  margin-top: 30px;
+}
