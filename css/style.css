@@ -1,6 +1,22 @@
 .card.personal-details{
 
 }
+.card.personal-details .hide-on-large-only .row{
+  margin-bottom: 0;
+}
+.card.personal-details .hide-on-large-only img{
+  width: 100%;
+}
+.card.personal-details .hide-on-large-only .complate-name .first-name{
+  font-size: 22px;
+}
+.card.personal-details .hide-on-large-only .complate-name .last-name{
+  font-size: 18px;
+  font-weight: bold;
+}
+.card.personal-details .hide-on-large-only .job-title{
+  font-size: 14px;
+}
 .card.personal-details .card-content {
   font-size: 14px;
   line-height: 24px;
@@ -22,32 +38,41 @@
 .card.personal-details .card-image > .card-title > .job-title{
   font-size: 14px;
 }
-.card-panel.experience-wrapper > .experience-list .experience-item{
+.card-panel.experience-wrapper > .experience-list .experience-item,
+.card-panel.education-wrapper > .education-list .education-item{
   margin-top:20px;
   margin-bottom: 20px;
 }
-.card-panel.experience-wrapper > .experience-list .experience-item .job-title{
+.card-panel.experience-wrapper > .experience-list .experience-item .job-title,
+.card-panel.education-wrapper > .education-list .education-item .school-title{
   font-size: 14px;
   font-weight: bold;
 }
-.card-panel.experience-wrapper > .experience-list .experience-item .job-title .company-name{
+.card-panel.experience-wrapper > .experience-list .experience-item .job-title .company-name,
+.card-panel.education-wrapper > .education-list .education-item .school-title .school-name{
   font-size: 12px;
   font-weight: normal;
 }
-.card-panel.experience-wrapper > .experience-list .experience-item .period{
+.card-panel.experience-wrapper > .experience-list .experience-item .period,
+.card-panel.education-wrapper > .education-list .education-item .period{
   font-size: 10px;
 }
-.card-panel.experience-wrapper > .experience-list .experience-item .summary{
+.card-panel.experience-wrapper > .experience-list .experience-item .summary,
+.card-panel.education-wrapper > .education-list .education-item .summary{
+
   font-size: 12px;
   text-align: justify;
 }
-.card-panel.experience-wrapper > .experience-list .experience-item .summary ul{
-  margin-bottom: 10px;
+.card-panel.experience-wrapper > .experience-list .experience-item .summary ul,
+.card-panel.education-wrapper > .education-list .education-item .summary ul{
+  margin-bottom: 10px;education
 }
-.card-panel.experience-wrapper > .experience-list .experience-item .summary ul > li .fa.fa-circle{
+.card-panel.experience-wrapper > .experience-list .experience-item .summary ul > li .fa.fa-circle,
+.card-panel.education-wrapper > .education-list .education-item .summary ul > li .fa.fa-circle{
   margin:7px 0;
 }
-.card-panel.experience-wrapper > .experience-list .experience-item .summary ul > li span{
+.card-panel.experience-wrapper > .experience-list .experience-item .summary ul > li span,
+.card-panel.education-wrapper > .education-list .education-item .summary ul > li span{
   margin:5px 0;
 }
 
@@ -62,4 +87,72 @@
 }
 .medium{
   font-weight: 300;
+}
+@media only print{
+  .no-print{display: none !important;}
+}
+@media only print and (max-width: 600px) {
+  .hide-on-small-only, .hide-on-small-and-down {
+    display: none !important;
+  }
+}
+
+@media only print and (max-width: 992px) {
+  .hide-on-med-and-down {
+    display: none !important;
+  }
+}
+
+@media only print and (min-width: 601px) {
+  .hide-on-med-and-up {
+    display: none !important;
+  }
+}
+
+@media only print and (min-width: 600px) and (max-width: 992px) {
+  .hide-on-med-only {
+    display: none !important;
+  }
+}
+
+@media only print and (min-width: 993px) {
+  .hide-on-large-only {
+    display: none !important;
+  }
+}
+
+@media only print and (min-width: 993px) {
+  .show-on-large {
+    display: block !important;
+  }
+}
+
+@media only print and (min-width: 600px) and (max-width: 992px) {
+  .show-on-medium {
+    display: block !important;
+  }
+}
+
+@media only print and (max-width: 600px) {
+  .show-on-small {
+    display: block !important;
+  }
+}
+
+@media only print and (min-width: 601px) {
+  .show-on-medium-and-up {
+    display: block !important;
+  }
+}
+
+@media only print and (max-width: 992px) {
+  .show-on-medium-and-down {
+    display: block !important;
+  }
+}
+
+@media only print and (max-width: 600px) {
+  .center-on-small-only {
+    text-align: center;
+  }
 }
